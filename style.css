@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Roboto";
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+.container .left_side{
+    position: relative;
+    background-color: #003147;
+    padding:  40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+position: relative;
+width: 200px;
+height: 200px;
+margin-top: 85%;
+border-radius: 50%;
+overflow: hidden;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+
+}
+.contactInfo ul li{
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li .text{
+    color: #fff;
+}
+.skills .title{
+    padding-top: 40px; 
+}
+.skills  ul li{
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+}
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding:  40px;
+}
+.right_side .title{
+    color: #003147;
+    font-weight: 600;
+    margin-top: 40%;
+}
+.right_side .education ul li{
+    margin-bottom: 15px;
+}
+.right_side .education ul li h5{
+opacity: .5;
+font-weight: 500;
+margin-bottom: 3px;
+}
+.right_side .education ul li h4:nth-child(2)
+{
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.right_side .education ul li h4
+{
+    font-weight: 300;
+}
+.project .titlePro{
+    color: #003147;
+    font-weight: 600;
+    margin: 20px 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.project ul{
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.project .textPro{
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+.work .titlework{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #003147;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.work .titlework li{
+    cursor: pointer;
+}
+.textWork{
+    margin-top: 4px;
+    margin-bottom: 3px; 
+}
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 700px){
+    .profileText .imgBx {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-top: 217%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .profileText .imgBx {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-top: 343%;
+        border-radius: 50%;
+    }
+}
